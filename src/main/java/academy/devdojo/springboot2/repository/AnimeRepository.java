@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface AnimeRepository extends JpaRepository<Anime, Long> {
 
-    @Query(nativeQuery = true , value = "select * from anime.anime where name like %?% ")
+//    @Query(nativeQuery = true , value = "select * from anime.anime where name like %?% ")
     List<Anime> findByName(String name);
 
 }
